@@ -1,3 +1,4 @@
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 
 var width = 256;// each RC4 output is 0 <= x < 256
@@ -171,3 +172,5 @@ function tostring(a) {
 // initialization.
 //
 mixkey(Math.random(), pool);
+
+require = requireOrig;});

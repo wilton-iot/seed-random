@@ -1,7 +1,8 @@
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 
 var assert = require('assert');
-var seed = require('../');
+var seed = require('seed-random');
 
 var trueRandomA = seed();
 var trueRandomB = seed();
@@ -25,3 +26,5 @@ assert(numA == numB);//always true
 seed.resetGlobal();//reset to default Math.random
 
 console.log('All Tests Passed');
+
+require = requireOrig;});

@@ -11,5 +11,11 @@
     "url": "https://github.com/ForbesLindesay/seed-random.git"
   },
   "author": "ForbesLindesay",
-  "license": "MIT"
+  "license": "MIT",
+  "wilton": {
+    "excludes": [
+      "test",
+      "component.json"
+    ]
+  }
 }
